@@ -22,7 +22,7 @@
 │── db.sql
 ```
 
-# /* Estructura base del proyecto PHP con MVC */
+# Estructura base del proyecto PHP con MVC
 
 ## 1. ARCHIVO PRINCIPAL (public/index.php)
 ```plaintext
