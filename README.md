@@ -1,6 +1,3 @@
-# pelailla_app
-Proyecto
-
 # Structura y archivos
 ```plaintext
 /pelailla_app/
