@@ -2,10 +2,11 @@
 Proyecto
 
 # Structura y archivos
-/pelailla_app/.
-│── /app/.
-│   ├── /controllers/.
-│   │   ├── HomeController.php.
+```plaintext
+/pelailla_app/
+│── /app/
+│   ├── /controllers/
+│   │   ├── HomeController.php
 │   │   ├── UserController.php
 │   ├── /models/
 │   │   ├── User.php
