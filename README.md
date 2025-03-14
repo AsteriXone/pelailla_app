@@ -23,12 +23,12 @@ Proyecto
 │── .htaccess
 │── config.php
 │── db.sql
-
+```
 
 # /* Estructura base del proyecto PHP con MVC */
 
 ## 1. ARCHIVO PRINCIPAL (public/index.php)
-
+```plaintext
 require_once '../core/Router.php';
 require_once '../core/Controller.php';
 require_once '../core/Model.php';
@@ -36,16 +36,18 @@ require_once '../config.php';
 
 $router = new Router();
 $router->run();
+```
 
 ## 2. CONFIGURACIÓN BASE DE DATOS (config.php)
-
+```plaintext
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'mi_app');
 define('DB_USER', 'root');
 define('DB_PASS', '');
+```
 
 ## 3. RUTEO BÁSICO (core/Router.php)
-
+```plaintext
 class Router {
     public function run() {
         $url = isset($_GET['url']) ? $_GET['url'] : 'home';
@@ -61,35 +63,39 @@ class Router {
         $controller->$method();
     }
 }
+```
 
 ## 4. CONTROLADOR BASE (core/Controller.php)
-
+```plaintext
 class Controller {
     public function view($view, $data = []) {
         extract($data);
         require_once "../app/views/$view.php";
     }
 }
+```
 
 ## 5. MODELO BASE (core/Model.php)
-
+```plaintext
 class Model {
     protected $db;
     public function __construct() {
         $this->db = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_NAME, DB_USER, DB_PASS);
     }
 }
+```
 
 ## 6. CONTROLADOR HOME (app/controllers/HomeController.php)
-
+```plaintext
 class HomeController extends Controller {
     public function index() {
         $this->view('home');
     }
 }
+```
 
 ## 7. CONTROLADOR USUARIO (app/controllers/UserController.php)
-
+```plaintext
 require_once '../app/models/User.php';
 
 class UserController extends Controller {
@@ -112,9 +118,10 @@ class UserController extends Controller {
         header('Location: /');
     }
 }
+```
 
 ## 8. MODELO USUARIO (app/models/User.php)
-
+```plaintext
 class User extends Model {
     public function checkLogin($email, $password) {
         $stmt = $this->db->prepare("SELECT * FROM users WHERE email = ? AND password = ?");
@@ -122,9 +129,10 @@ class User extends Model {
         return $stmt->fetch();
     }
 }
+```
 
 ## 9. VISTA HOME (app/views/home.php)
-
+```plaintext
 <!DOCTYPE html>
 <html>
 <head><title>Inicio</title></head>
@@ -133,9 +141,10 @@ class User extends Model {
     <a href="/user/login">Login</a>
 </body>
 </html>
+```
 
 ## 10. VISTA LOGIN (app/views/login.php)
-
+```plaintext
 <!DOCTYPE html>
 <html>
 <head><title>Login</title></head>
@@ -148,6 +157,9 @@ class User extends Model {
     </form>
 </body>
 </html>
+```
 
 # Primera prueba
+```plaintext
 http://localhost/pelailla_app/public/
+```
