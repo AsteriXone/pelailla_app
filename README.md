@@ -17,7 +17,6 @@
 │   ├── Router.php
 │   ├── Controller.php
 │   ├── Model.php
-│── .htaccess
 │── config.php
 │── db.sql
 ```
