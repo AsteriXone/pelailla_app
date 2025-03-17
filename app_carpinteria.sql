@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-03-2025 a las 12:30:10
+-- Tiempo de generación: 17-03-2025 a las 18:25:56
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -73,6 +73,7 @@ CREATE TABLE `usuarios` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(100) NOT NULL,
   `Email` varchar(255) NOT NULL,
+  `password` varchar(150) NOT NULL,
   `Telefono` varchar(15) NOT NULL,
   `Ubicacion` varchar(255) DEFAULT NULL,
   `FechaRegistro` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -161,5 +162,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
