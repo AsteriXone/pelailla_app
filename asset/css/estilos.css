@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fondo{
+    min-height: 100vh;
+}
+.fondo_menu{
+    background-color: #212529;
+    position: sticky;
+}
+.boton{
+    color: rgb(239, 214, 51);
+    border: 1px solid rgb(239, 214, 51);
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    transition: .2s;
+}
+.boton:hover{
+    border: 1px solid green;
+    color: green;
+    }
+
+
+.navbar-brand{
+    color: rgb(239, 214, 51);
+}
+
