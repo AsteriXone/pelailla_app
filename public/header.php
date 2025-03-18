@@ -10,7 +10,7 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div>
-                <a href="" class="boton">Iniciar Session</a>
+                <a href="login.php" class="boton">Iniciar Session</a>
                 <a href="" class="boton">Registro</a>
                 </div>
             </div>
