@@ -19,9 +19,10 @@
                 <label>Email</label>
             </div>
             <div class="input-box">
-            
-                <label>Contraseña</label>
                 <input type="password" require name="password" id="password">
+                <label>Contraseña</label>
+
+                
                 <div class="box-eye">
                     <button type="button" onclick="mostrarContraseña('password','eyepassword')">
                     <i id="eyepassword" class="fa-solid fa-eye changePassword "></i>
