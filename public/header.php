@@ -1,7 +1,7 @@
 <?php
     require_once("c://xampp/htdocs/pelailla_app/public/head.php");
 ?>
-<div class="fondo_menu">
+<div class="fondo_menu, fondopagina">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">

@@ -11,6 +11,10 @@
 .fondo_menu{
     background-color: #212529;
     position: sticky;
+
+.fondopagina {
+background: linear-gradient(to bottom, #edde0a54, #e29d15);
+} 
 }
 .boton{
     color: rgb(239, 214, 51);
@@ -22,8 +26,8 @@
     transition: .2s;
 }
 .boton:hover{
-    border: 1px solid rgb(128, 41, 0);
-    color: green;
+    border: 1px solid rgb(245, 247, 176);
+    color: rgb(245, 247, 176);
     }
 
 
@@ -87,15 +91,27 @@
     color: #1c1a1a;
     line-height: 57px;
 }
-
-.input-box .icon {
+.box-eye{
     position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 57px;
+    right: 10px; /* Posiciona el icono al final del input */
+    top: 50%; /* Mueve el icono al 50% del alto del input */
+    transform: translateY(-50%)
 }
+.box-eye button{
+    border: none;
+    position: absolute;
 
+.input-box {
+position: relative;
+}
+}
+.changePassword{
+    position: absolute;
+    top: -9px;
+    left: -30px;
+    color: rgb(51, 47, 47);
+    cursor: pointer;
+}
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
