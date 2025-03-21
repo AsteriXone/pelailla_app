@@ -1,6 +1,5 @@
 <?php require_once "c://xampp/htdocs/pelailla_app/public/header.php" ?>
 
-<?php require_once "c://xampp/htdocs/pelailla_app/public/head.php" ?>
 
 <section class="fondopagina, centrarlogin" style="height: 900px;">
     <div class="login-box">
