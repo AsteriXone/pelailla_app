@@ -1,4 +1,4 @@
-<?php require_once "c://xampp/htdocs/pelailla_app/public/header.php" ?>
+<?php require_once "public/header.php" ?>
 
 
 <section class="fondopagina, centrarlogin" style="height: 900px;">
@@ -10,7 +10,7 @@
             //incluidos desde la carpeta login para establecer la conexión con la base de datos y 
             // para establecer la Sesión del usuario que accede
             include "login/modelologin.php";
-            include "login/controlador/controladorlogin.php";
+            include "login/controladorlogin.php";
             //?>
             
             <div class="input-box">

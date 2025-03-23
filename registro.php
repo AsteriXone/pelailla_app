@@ -1,9 +1,9 @@
-<?php require_once "c://xampp/htdocs/pelailla_app/public/header.php" ?>
+<?php require_once "public/header.php" ?>
 
 <section class="fondopagina, centrarlogin" style="height: 900px;">
     <div class="login-box" style="height: 550px;">
         <form action="registroBBDD.php" method="post">
-            <h2 style="font-size: 2.5em; color: #fff; text-align: center; font-weight: bold;">Regístrate</h2>
+            <h2 style="font-size: 2.5em; color: black; text-align: center; font-weight: bold;">Regístrate</h2>
             <div class="input-box">
                 <span class="icon"><ion-icon name="nombre"></ion-icon></span>
                 <input type="text" required name="nombre">

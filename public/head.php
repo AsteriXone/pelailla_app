@@ -1,16 +1,22 @@
+<section class="fondopagina" style="height: 900px;">
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="/pelailla_app/asset/css/estilos.css">
-    <script src="https://kit.fontawesome.com/e1d55cc160.js" crossorigin="anonymous"></script>
-  </head>
-  
-  <body>
+<//div class="row"><br></div>
+
+<!--<div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-9 titulo">
+        <div class="row">
+            <span style="vertical-align:top; padding-left:10px; padding-top: 50px;">APPCARPENTERTOOLS</span>
+        </div>
+        <div class="row">
+            <span class="sub-titulo" style="margin-top:-180px; margin-left: 280px;">DALE UNA SEGUNDA OPORTUNIDAD A TUS HERRAMIENTAS</div>
+    </div>
+</div>
+
+<div class="row"><br></div>-->
+
+     
+</section> 
   
     
 
