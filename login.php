@@ -9,8 +9,8 @@
             <?php 
             //incluidos desde la carpeta login para establecer la conexión con la base de datos y 
             // para establecer la Sesión del usuario que accede
-           // include "login/modelo/conexion.php";
-            //include "login/controlador/controlador_login.php";
+            include "login/modelologin.php";
+            include "login/controlador/controladorlogin.php";
             //?>
             
             <div class="input-box">

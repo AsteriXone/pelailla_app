@@ -21,7 +21,7 @@ $name = "";
 $email = "";
 $password = "";
 $date = "";
-$descripcion ="";
+$permisos="";
 
 //Comprobar que las variables se obtienen por metodo post
 if( $_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -34,24 +34,28 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST'){
         $errorMessage = "Rellena todos los campos";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errorMessage = "El correo electrónico no es válido.";
-    } elseif (strlen($password) < 8) {
+    } elseif (strlen($password) < 4) {
         $errorMessage = "La contraseña debe tener al menos 8 caracteres.";
     } else {
         try {
-            // aseguramos la contraseña mediante Hash
+            // aseguramos la contraseña mediante la función hash()
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
             // Insertar datos en la base de datos
             $sql = "INSERT INTO user (nombre, email, pass, fecha) VALUES (:name, :email, :password, :date)";
-            $stmt = $connection->prepare($sql);
-            $stmt->bindParam(':name', $name, PDO::PARAM_STR);
-            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
-            $stmt->bindParam(':password', $hashedPassword, PDO::PARAM_STR);
-            $stmt->bindParam(':date', $date, PDO::PARAM_STR);
-            $stmt->execute();
+            $stament = $connection->prepare($sql);
+            $stament->bindParam(':name', $name,);
+            $stament->bindParam(':email', $email,);
+            $stament->bindParam(':password', $hashedPassword,);
+            $stament->bindParam(':date', $date,);
+            $stament->execute();
 
             $successMessage = "Usuario añadido correctamente";
-            $name = $email = $password = $date = ""; // Limpiar los datos
+            // Limpiar los datos
+            $name = "";
+            $email = ""; 
+            $password = ""; 
+            $date = ""; 
         } catch (PDOException $e) {
             $errorMessage = "Error en la inserción de datos: " . $e->getMessage();
         }
